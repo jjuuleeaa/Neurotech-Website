@@ -181,7 +181,15 @@
     border-top: 5px solid #FF602B;
     box-sizing: border-box;
 }
-
+.homepage-child5 {
+    position: absolute;
+    top: 315px;
+    left: 46px;
+    width: 201px;
+    height: 1px;
+    border-top: 5px solid #FF602B;
+    box-sizing: border-box;
+}
 .paw-5892565-1280-2-icon {
     position: absolute;
     top: 38px;
