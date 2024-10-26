@@ -1,6 +1,23 @@
+body {
+    margin: 0;
+    line-height: normal;
+}
+
 .rectangle-div {
     width: 100%;
     position: relative;
     background-color: #ffbf9d;
     height: 168px;
+}
+
+h1.neuroneko {
+    width: 1021px;
+    position: relative;
+    font-size: 128px;
+    display: inline-block;
+    font-family: Jaldi;
+    color: #000;
+    text-align: center;
+    height: 109px;
+    text-shadow: 1px 0 0 #000, 0 1px #000, -1px 0 0 #000, 0 -1px 0 #000;
 }
