@@ -173,19 +173,19 @@
     height: 158px;
 }
 .line-icon {
-    width: 100%;
-    position: relative;
-    max-width: 100%;
-    overflow: hidden;
+    position: absolute;
+    top: 315px;
+    left: 46px;
+    width: 201px;
     height: 1px;
     object-fit: contain;
 }
 
 .homepage-child5 {
-    width: 100%;
-    position: relative;
-    max-width: 100%;
-    overflow: hidden;
+    position: absolute;
+    top: 315px;
+    left: 46px;
+    width: 201px;
     height: 1px;
     object-fit: contain;
 }
