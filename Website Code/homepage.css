@@ -246,8 +246,8 @@
     cursor: pointer;
 }
 .homepage {
-    width: 50%;
-    position: relative;
+    width: 100%;
+    position: static;
     background-color: #fff;
     height: 2048px;
     overflow: hidden;
