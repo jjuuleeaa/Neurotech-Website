@@ -1,0 +1,201 @@
+.game-2-find-the-treat-child {
+    position: absolute;
+    top: 41px;
+    left: 107px;
+    background-color: #ffbf9d;
+    width: 1205px;
+    height: 168px;
+}
+.neuroneko {
+    position: absolute;
+    top: 25px;
+    left: 199px;
+    font-size: 128px;
+    display: inline-block;
+    font-family: Jaldi;
+    width: 1021px;
+    height: 109px;
+    text-shadow: 1px 0 0 #000, 0 1px 0 #000, -1px 0 0 #000, 0 -1px 0 #000;
+}
+.game-2-find-the-treat-item {
+    position: absolute;
+    top: 17px;
+    left: 1224px;
+    background-color: #7c9bff;
+    width: 163px;
+    height: 158px;
+}
+.game-2-find-the-treat-inner {
+    position: absolute;
+    top: 93px;
+    left: 53px;
+    background-color: #ff9afa;
+    width: 163px;
+    height: 158px;
+}
+.paw-5892565-1280-5-icon {
+    position: absolute;
+    top: 40px;
+    left: 1245px;
+    width: 122px;
+    height: 113px;
+    object-fit: cover;
+}
+.brain-1294854-1280-4-icon {
+    position: absolute;
+    top: 103px;
+    left: 75px;
+    width: 116px;
+    height: 138px;
+    object-fit: cover;
+}
+.rectangle-div {
+    position: absolute;
+    top: 499px;
+    left: 64px;
+    background-color: #d9d9d9;
+    border: 5px solid #ffb7a5;
+    box-sizing: border-box;
+    width: 1292px;
+    height: 478px;
+}
+.find-the-treat {
+    position: absolute;
+    top: 308px;
+    left: 199px;
+    font-size: 75px;
+    font-family: Jaldi;
+    display: inline-block;
+    width: 1021px;
+    height: 109px;
+    text-shadow: 1px 0 0 #000, 0 1px 0 #000, -1px 0 0 #000, 0 -1px 0 #000;
+}
+.paw-5892565-1280-6-icon {
+    position: absolute;
+    top: 223px;
+    left: 671px;
+    width: 92px;
+    height: 85px;
+    object-fit: cover;
+}
+.ellipse-div {
+    position: absolute;
+    top: 224px;
+    left: 241px;
+    border-radius: 50%;
+    background-color: #c2d9ff;
+    width: 177px;
+    height: 90px;
+}
+.game-2-find-the-treat-child1 {
+    position: absolute;
+    top: 223px;
+    left: 456px;
+    border-radius: 50%;
+    background-color: #ffc2fa;
+    width: 177px;
+    height: 90px;
+}
+.game-2-find-the-treat-child2 {
+    position: absolute;
+    top: 225px;
+    left: 806px;
+    border-radius: 50%;
+    background-color: #ffc2fa;
+    width: 177px;
+    height: 90px;
+    cursor: pointer;
+}
+.game-2-find-the-treat-child3 {
+    position: absolute;
+    top: 224px;
+    left: 1021px;
+    border-radius: 50%;
+    background-color: #ffc2fa;
+    width: 177px;
+    height: 90px;
+}
+.home {
+    position: absolute;
+    top: 242px;
+    left: 256px;
+    display: inline-block;
+    width: 147px;
+    height: 54px;
+    text-shadow: 1px 0 0 #000, 0 1px 0 #000, -1px 0 0 #000, 0 -1px 0 #000;
+    cursor: pointer;
+}
+.cognitive-test {
+    position: absolute;
+    top: 251px;
+    left: 471px;
+    font-size: 24px;
+    display: inline-block;
+    width: 147px;
+    height: 54px;
+    text-shadow: 1px 0 0 #000, 0 1px 0 #000, -1px 0 0 #000, 0 -1px 0 #000;
+    cursor: pointer;
+}
+.catch-the-laser {
+    position: absolute;
+    top: 235px;
+    left: 1036px;
+    font-size: 32px;
+    display: inline-block;
+    width: 147px;
+    height: 54px;
+    text-shadow: 1px 0 0 #000, 0 1px 0 #000, -1px 0 0 #000, 0 -1px 0 #000;
+    cursor: pointer;
+}
+.this-game-is {
+    margin: 0;
+}
+.this-game-is-container {
+    position: absolute;
+    top: 402px;
+    left: 100px;
+    display: inline-block;
+    width: 1206px;
+    height: 50px;
+    text-shadow: 1px 0 0 #000, 0 1px 0 #000, -1px 0 0 #000, 0 -1px 0 #000;
+}
+.meowmory {
+    position: absolute;
+    top: 254px;
+    left: 823px;
+    font-size: 24px;
+    display: inline-block;
+    width: 147px;
+    height: 54px;
+    text-shadow: 1px 0 0 #000, 0 1px 0 #000, -1px 0 0 #000, 0 -1px 0 #000;
+}
+.line-div {
+    position: absolute;
+    top: 375.5px;
+    left: 50.5px;
+    border-top: 5px solid #2dd651;
+    box-sizing: border-box;
+    width: 430px;
+    height: 5px;
+}
+.game-2-find-the-treat-child4 {
+    position: absolute;
+    top: 375.5px;
+    left: 939.5px;
+    border-top: 5px solid #2dd651;
+    box-sizing: border-box;
+    width: 430px;
+    height: 5px;
+}
+.game-2-find-the-treat {
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    height: 1024px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 40px;
+    color: #000;
+    font-family: Itim;
+}
+
