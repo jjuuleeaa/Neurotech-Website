@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Dot Generator</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden; /* Prevent scrollbars */
+        }
+        .dot {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: red;
+            border-radius: 50%; /* Makes it a circle */
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function generateRandomDot() {
+            // Create a new div element
+            const dot = document.createElement('div');
+            dot.className = 'dot';
+
+            // Get the viewport dimensions
+            const viewportWidth = window.innerWidth;
+            const viewportHeight = window.innerHeight;
+
+            // Generate random x and y coordinates
+            const x = Math.random() * (viewportWidth - 10); // Subtract dot width
+            const y = Math.random() * (viewportHeight - 10); // Subtract dot height
+
+            // Set the position of the dot
+            dot.style.left = `${x}px`;
+            dot.style.top = `${y}px`;
+
+            // Add the dot to the body
+            document.body.appendChild(dot);
+        }
+
+        // Generate a dot when the page loads
+        window.onload = generateRandomDot;
+    </script>
+</body>
+</html>
