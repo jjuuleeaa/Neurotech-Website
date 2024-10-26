@@ -247,7 +247,7 @@
 }
 .homepage {
     width: 75%;
-    position: relative;
+    position: sticky;
     background-color: #fff;
     height: 2048px;
     overflow: hidden;
