@@ -1,1 +1,1 @@
-# HackRU
+# Neurotech
