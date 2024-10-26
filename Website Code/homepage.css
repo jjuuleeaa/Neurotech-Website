@@ -247,7 +247,7 @@
 }
 .homepage {
     width: 75%;
-    position: fixed;
+    position: absolute;
     background-color: #fff;
     height: 2048px;
     overflow: hidden;
