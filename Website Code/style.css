@@ -1,0 +1,135 @@
+* {
+  font-family: Jaldi;
+}
+
+#mainHeader {
+  position: relative;
+  background-color: #ffbf9d;
+  width: 80%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  margin: 40px auto;
+}
+
+#mindContainer {
+  background-color: #ff9afa;
+  width: 75px;
+  height: 90px;
+  padding: 8px;
+  position: absolute;
+  left: -5%;
+  top: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#pawcontainer {
+  background-color: #7c9bff;
+  width: 75px;
+  height: 90px;
+  padding: 8px;
+  position: absolute;
+  right: -5%;
+  bottom: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mind {
+  width: 70px;
+}
+
+#paw {
+  width: 70px;
+}
+
+#welcomeText {
+  font-size: 50px;
+  text-align: center;
+}
+
+#welcomeText::before,
+#welcomeText::after {
+  content: "";
+  display: inline-block;
+  width: 22%;
+  height: 4px;
+  margin: auto 20px;
+  background-color: #ff602b;
+}
+
+.mainText {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.sectionHeaderContainer {
+  background-color: #ffc484;
+  width: fit-content;
+  display: block;
+  padding: 0 30px;
+  margin: auto;
+}
+
+.sectionHeaderContainer > h2 {
+  font-size: 85px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.cognativeTestContainer {
+  height: 399px;
+  width: 895px;
+  background-color: gray;
+  border: solid 3px #ffb7a5;
+  margin: auto;
+}
+
+#gameListSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gameContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game {
+  height: 377px;
+  width: 377px;
+  background-color: gray;
+  border: solid 3px #ffb7a5;
+  margin: auto;
+  display: inline-block;
+}
+
+.gameButton {
+  border-radius: 50%;
+  font-size: 25px;
+  padding: 0 50px;
+  margin-top: 10px;
+  text-decoration: none !important;
+  color: black !important;
+}
+
+.gameButton:link,
+.gameButton:visited,
+.gameButton:active {
+  text-decoration: none !important;
+  color: black !important;
+}
+
+.gameButton:hover {
+  scale: 1.1;
+  transition: all 0.2s;
+  cursor: pointer;
+}
