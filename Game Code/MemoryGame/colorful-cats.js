@@ -1,57 +1,120 @@
+// Game State Variables
 let level = 1;
-let catColors = ["red", "blue", "green", "yellow", "purple", "orange"];
-let currentCatColor;
 let health = 3;
 
+// Cat Colors and Images Array
+const catColors = [
+    { color: "black", image: "black-cat.png" },
+    { color: "gray", image: "gray-cat.png" },
+    { color: "orange", image: "orange-cat.png" },
+    { color: "tabby", image: "tabby-cat.png" },
+    { color: "white", image: "white-cat.png" }
+];
+
+let currentCat; // Holds the current cat object for each level
+
+// Start the game: Hide welcome screen, show game area
 function startGame() {
     document.getElementById('welcome-screen').style.display = 'none';
     document.getElementById('game-area').style.display = 'block';
     loadLevel();
 }
 
+// Load each level: Randomize cat color and display it
 function loadLevel() {
     document.getElementById('level').innerText = level;
+
+    // Get a random cat from the array
     let randomIndex = Math.floor(Math.random() * catColors.length);
-    currentCatColor = catColors[randomIndex];
+    currentCat = catColors[randomIndex];
 
-    // Display cat image (for simplicity, use colored divs or images)
+    // Display the cat image
     let catContainer = document.getElementById('cat-container');
-    catContainer.innerHTML = `<div style="background-color: ${currentCatColor}; width: 150px; height: 150px; border-radius: 10px;"></div>`;
+    catContainer.innerHTML = `<img src="${currentCat.image}" alt="${currentCat.color} cat" width="150">`;
 
+    // Hide the cat after 10 seconds
     setTimeout(() => {
-        catContainer.innerHTML = '';  // Hide the cat color after 10 seconds
-    }, 10000);  // Change 10000 for 10 seconds
+        catContainer.innerHTML = '';
+    }, 10000); // 10 seconds
 }
 
+// Check if the answer is correct
 function checkAnswer() {
     let userAnswer = document.getElementById('cat-answer').value.toLowerCase();
-    if (userAnswer === currentCatColor) {
+    if (userAnswer === currentCat.color) {
         document.getElementById('game-area').style.display = 'none';
         document.getElementById('success-screen').style.display = 'block';
     } else {
         health--;
+        updateHealthBar();
         if (health > 0) {
             document.getElementById('game-area').style.display = 'none';
             document.getElementById('fail-screen').style.display = 'block';
         } else {
-            // Game over logic
             alert('Game Over! Try again.');
             restartGame();
         }
     }
 }
 
+// Move to the next level
 function nextLevel() {
     level++;
-    document.getElementById('success-screen').style.display = 'none';
+    document.getElementById('success-screen').classList.add('fade-out');
+    setTimeout(() => {
+        document.getElementById('success-screen').classList.remove('fade-out');
+        document.getElementById('success-screen').style.display = 'none';
+        document.getElementById('game-area').classList.add('fade-in');
+        document.getElementById('game-area').style.display = 'block';
+        loadLevel();
+    }, 1000);  // Wait for the fade-out animation to finish
+}
+
+// Restart the game
+function restartGame() {
+    level = 1;
+    health = 3;
+    updateHealthBar();
+    document.getElementById('fail-screen').style.display = 'none';
     document.getElementById('game-area').style.display = 'block';
     loadLevel();
 }
 
-function restartGame() {
-    level = 1;
-    health = 3;
-    document.getElementById('fail-screen').style.display = 'none';
-    document.getElementById('game-area').style.display = 'block';
-    loadLevel();
+// Update the health bar based on player's current health
+function updateHealthBar() {
+    const healthIndicator = document.getElementById('health-indicator');
+    let healthPercentage = (health / 3) * 100;
+    healthIndicator.style.width = healthPercentage + "%";
+
+    // Change the color of the health bar based on health level
+    if (health === 2) {
+        healthIndicator.style.backgroundColor = "yellow";
+    } else if (health === 1) {
+        healthIndicator.style.backgroundColor = "red";
+    }
+}
+
+// Additional Features: Shake effect for wrong answers
+function checkAnswerWithShake() {
+    let userAnswer = document.getElementById('cat-answer').value.toLowerCase();
+    if (userAnswer === currentCat.color) {
+        document.getElementById('game-area').style.display = 'none';
+        document.getElementById('success-screen').style.display = 'block';
+    } else {
+        // Add shake animation when the answer is wrong
+        document.getElementById('cat-answer').classList.add('shake');
+        setTimeout(() => {
+            document.getElementById('cat-answer').classList.remove('shake');
+        }, 500); // Shake effect for 0.5s
+
+        health--;
+        updateHealthBar();
+        if (health > 0) {
+            document.getElementById('game-area').style.display = 'none';
+            document.getElementById('fail-screen').style.display = 'block';
+        } else {
+            alert('Game Over! Try again.');
+            restartGame();
+        }
+    }
 }
