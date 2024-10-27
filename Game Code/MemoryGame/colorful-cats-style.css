@@ -1,0 +1,43 @@
+body {
+    font-family: 'Press Start 2P', cursive; /* Retro/Pixel font */
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.loading-screen, .game-screen {
+    margin-top: 50px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #8d6ae5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.cat-explainer {
+    margin-bottom: 20px;
+}
+
+#catsContainer img {
+    width: 150px;
+    margin: 10px;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#healthBar {
+    margin-top: 20px;
+}
+
+#health {
+    color: green;
+}

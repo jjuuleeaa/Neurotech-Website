@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful Cats: Memory Meow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loading-screen" id="loadingScreen">
+        <h1>Welcome to Colorful Cats: Memory Meow!</h1>
+        <div class="cat-explainer">
+            <p>Hello! I’m Mr. Whiskers, and I’m here to guide you!</p>
+            <p>Memorize the color of the cats and answer correctly to keep playing. Let's see how far you can go!</p>
+        </div>
+        <button onclick="startGame()">Play Game</button>
+    </div>
+
+    <div class="game-screen" id="gameScreen" style="display: none;">
+        <h2>Level <span id="level">1</span></h2>
+        <div id="catsContainer"></div>
+        <button id="submitAnswer" onclick="submitAnswer()">Submit Answer</button>
+        <div id="result"></div>
+        <div id="healthBar">
+            <p>Health: <span id="health">100</span>%</p>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
