@@ -41,7 +41,6 @@ Navigate to the project folder and open `index.html` to get started.
 
 3. **Technologies Used**:
 - HTML, CSS, JavaScript
-- [Optional] Any frameworks or libraries if applicable
 
 ## How to Play
 
